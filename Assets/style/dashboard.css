@@ -1,0 +1,388 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  min-height: 100vh;
+  /* overflow-x: hidden; */
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* .hr{
+    width: 80%;
+    text-align: center;
+    align-items: center;
+} */
+
+.side-menu {
+  position: fixed;
+  background: #bcbabadd;
+  width: 20vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 14vh;
+  padding-top: 30px;
+}
+.brand-name {
+  height: 10vh;
+  display: flex;
+  /* align-items: center;
+    justify-content: center; */
+  width: 70vw;
+}
+
+.dashboard-heading {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.brand-name a {
+  height: 50%;
+  width: 20%;
+  margin-top: 15px;
+}
+
+.side-menu ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+}
+
+.side-menu li {
+  font-size: 24px;
+  padding: 17px 40px;
+  color: #030303;
+  display: flex;
+  align-items: center;
+}
+
+.side-menu li span {
+  font-weight: 100;
+}
+
+.logout_button button {
+  background: transparent;
+  width: 200px;
+  font-size: 25px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logout_button :hover {
+  background-color: #a9a2a2;
+}
+
+.side-menu li:hover,
+.select_tab {
+  background: #a9a2a2;
+}
+.container {
+  position: absolute;
+  right: 0;
+  width: 80vw;
+  /* height: 100vh; */
+  background: #f1f1f1;
+}
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100px;
+  background: #f2f2f2dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.user {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user a {
+  font-size: 30px;
+  color: black;
+}
+
+.user_name {
+  width: 80%;
+  text-align: end;
+}
+
+.img-case {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.img-case img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: solid #888b62dd 2px;
+  box-shadow: #030303 2px;
+  border-radius: 50%;
+}
+
+.content {
+  position: relative;
+  margin-top: 10vh;
+  min-height: 90vh;
+  background: url(pexels-pixabay-531844.jpg);
+  background-size: cover; /* Adjusts the background image size to cover the entire container */
+  background-position: center; /* Centers the background image within the container */
+  margin: 100px 0px 0px;
+  border: solid;
+  border-width: 1px;
+  filter: brightness(90%);
+}
+
+label {
+  color: black;
+  font-size: 20px;
+}
+
+/* form box */
+
+.form-box {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  /* background: #33bc37; */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea,
+select {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none; /* Disable resizing for textarea */
+}
+
+/* CSS styles for the submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #33bc37;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* CSS styles for the dropdown menu */
+select {
+  appearance: none; /* Remove default appearance */
+  -webkit-appearance: none; /* Remove default appearance for Safari */
+  -moz-appearance: none; /* Remove default appearance for Firefox */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Add custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+@media screen and (max-width: 1050px) {
+  .side-menu li {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .side-menu li span {
+    display: none;
+  }
+  .side-menu {
+    align-items: center;
+  }
+  .side-menu li img {
+    width: 40px;
+    height: 40px;
+  }
+  .side-menu li:hover {
+    background: #f05462;
+    padding: 8px 38px;
+    border: 2px solid white;
+  }
+}
+@media screen and (max-width: 536px) {
+  .brand-name h1 {
+    font-size: 16px;
+  }
+
+  .side-menu li img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Depricat */
+
+/* 
+.btn{
+    background: #f05462;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;   
+}
+.btn:hover{
+    color: #f05462;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid #f05462;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+table{
+    padding: 10px;
+}
+th,td{
+    text-align: left;
+    padding: 8px;
+}
+
+
+.container .header .nav .search{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+.container .header .nav .search input[type=text]{
+    border: none;
+    background: #f1f1f1;
+    padding: 10px;
+    width: 50%;
+}
+.container .header .nav .search  button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container .header .nav .search  button img{
+    width: 30px;
+    height: 30px;
+}
+
+ .container .header .nav .user .img{
+    width: 40px;
+    height: 40px;
+} 
+
+.container .content .cards{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .content .cards .card{
+    width: 250px;
+    height: 150px;
+    background: white;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container .content .content-2{
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .content .content-2 .recent-payments{
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+.container .content .content-2 .new-students{
+    flex: 2;
+    background: white;
+    min-height: 50vh;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;   
+}
+.container .content .content-2 .new-students table td:nth-child(1) img {
+    height: 40px;
+    width: 40px;  
+}
+
+
+
+media query
+
+.container .content .cards{
+        justify-content: center;
+    }
+
+    .container .content .content-2 .recent-payments table th:nth-child(2),
+    .container .content .content-2 .recent-payments table th:nth-child(2){
+        display: none;
+    }
+
+*/

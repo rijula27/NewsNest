@@ -1,0 +1,393 @@
+/* Global */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* body{} */
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.devider {
+  border-top: 3px solid rgb(0, 0, 0);
+  margin: 0 70px;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.li {
+  list-style: none;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Navigation Bar */
+.mnavbar {
+  background-color: #f2f2f2dd;
+  width: 100%;
+  height: 100px;
+  padding: 0 100px;
+}
+
+.msub_navbar {
+  list-style: none;
+  justify-content: space-between;
+}
+
+.msub_navbar li {
+  list-style: none;
+  display: inline-block;
+  margin: 25px;
+  margin-top: 45px;
+  position: relative;
+}
+
+.msub_navbar li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+/* For Drop down menu */
+
+.dropbtn {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  padding: 14px 16px;
+  transition: background-color 0.3s;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #000;
+  padding: 5px 16px;
+  width: 220px;
+  text-decoration: none;
+  display: block;
+  font-size: 100px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* kshndklshfkidh */
+
+.cc_button button {
+  color: rgb(8, 8, 8);
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.cc_button button a {
+  font-size: 16px;
+}
+
+.cc_button :hover {
+  background-color: rgba(2, 2, 2, 0.496);
+}
+
+/* Body Section2 */
+
+.mcarousel {
+  margin: 35px 100px;
+}
+
+/* Article section */
+
+.article_section {
+  padding: 20px 100px 50px 100px;
+}
+
+.article_section h1 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.as_1,
+.as_2 {
+  height: 300px;
+}
+
+.as_1a,
+.as_1b,
+.as_1c,
+.as_2a,
+.as_2b,
+.as_2c {
+  box-shadow: 10px 10px 5px rgb(212, 214, 215);
+  height: 90%;
+  width: 30%;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: rgb(7, 7, 7);
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 20px;
+}
+
+.as_1a:hover img,
+.as_1b:hover img,
+.as_1c:hover img,
+.as_2a:hover img,
+.as_2b:hover img,
+.as_2c:hover img {
+  opacity: 0.5;
+}
+.as_1a:hover .overlay,
+.as_1b:hover .overlay,
+.as_1c:hover .overlay,
+.as_2a:hover .overlay,
+.as_2b:hover .overlay,
+.as_2c:hover .overlay {
+  opacity: 1;
+}
+
+/* Body Section 3 */
+
+.section_3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.news_highlight {
+  width: 53%;
+  margin-left: 100px;
+}
+
+.sub_nh {
+  height: 100px;
+  margin: 10px 0;
+}
+
+.nh_note {
+  width: 79%;
+  height: 100%;
+}
+.nh_pc {
+  width: 20%;
+  height: 100%;
+}
+
+/* section_3 Bulletin board */
+
+.bulletin_board {
+  margin-right: 100px;
+  border: solid;
+  border-color: #f2f2f2;
+  width: 30%;
+  height: 600px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.bb_heading h1 {
+  font-weight: 600px;
+}
+
+/* Body Section_4 */
+
+.section_4 {
+  margin: 0 100px;
+  margin-top: 50px;
+}
+
+.section_4 h1 {
+  font-weight: 600;
+}
+
+/* Section _5 */
+
+.section_5 {
+  margin: 50px 100px;
+  height: 96.5vh;
+}
+
+.s5_p4 {
+  width: 25%;
+  height: 90%;
+  overflow: hidden;
+}
+
+.s5 {
+  height: 100%;
+  width: 73%;
+}
+
+.s5_p1 {
+  height: 43%;
+  width: 100%;
+}
+.s5_p1_pc {
+  width: 67%;
+  height: 100%;
+}
+
+.fit_img {
+  width: 100%;
+  height: 100%;
+}
+
+.s5_p1_nt {
+  height: 100%;
+  width: 30%;
+}
+
+.s5_p2 {
+  margin-top: 15px;
+  height: 45%;
+}
+
+.s5_p2_nt1 {
+  width: 32%;
+  height: 100%;
+}
+
+.s5_p2_nt1a {
+  width: 100%;
+  height: 47%;
+}
+
+.s5_p2_nt1b {
+  width: 100%;
+  height: 40%;
+  margin-top: 14%;
+}
+
+.s5_p2_pc {
+  width: 65%;
+  height: 100%;
+}
+
+.s5_p3 {
+  margin-top: 14px;
+  height: 8%;
+}
+
+.s5_p3_a,
+.s5_p3_b {
+  width: 48%;
+  height: 100%;
+}
+
+/* Main footer */
+
+.main_footer {
+  background-color: #212529;
+  width: 99vw;
+  height: 60vh;
+  padding: 50px 100px;
+}
+
+.mf_1 {
+  width: 28%;
+  color: rgba(255, 255, 255, 0.496);
+  height: 350px;
+}
+
+.mf_1_heading,
+.mf_2_heading,
+.mf_3_heading,
+.mf_4_heading {
+  color: white;
+}
+
+.ab {
+  color: rgba(255, 255, 255, 0.475);
+}
+
+.mf_2,
+.mf_3 {
+  width: 15%;
+  height: 350px;
+}
+
+.mf_2_list ul {
+  align-items: start;
+}
+
+.mf_4 {
+  height: 350px;
+  width: 30%;
+  overflow: hidden;
+}
+
+/* .mf_4_list {
+  width: 100%;
+  height: 10px;
+} */
+
+.mf_4_list_1 {
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  margin: 10px auto;
+  gap: 15px;
+}
+
+.mf_4_list_1_img {
+  height: 100%;
+  width: 100%;
+}
+.mf_4_list_1_img img {
+  height: 100%;
+  width: 25%;
+}
+.mf_4_list_1_img a {
+  height: 100%;
+  width: 72%;
+  font-size: 1rem;
+}
+
+/* Sub footer */
+.sub_footer {
+  background-color: #141719;
+  height: 120px;
+  padding: 0 100px;
+}
+
+.copyright {
+  color: white;
+  font-size: 20px;
+}

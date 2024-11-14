@@ -1,0 +1,142 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.hr {
+  width: 90%;
+  align-items: center;
+  margin: 50px;
+}
+
+#select_tab {
+  background-color: #a9a2a2;
+}
+
+/* navbar */
+.navbar {
+  width: 100vw;
+  height: 100px;
+  padding: 0 80px;
+  background: #f2f2f2dd;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .navbar_item {
+  height: 100%;
+}
+
+.user_name {
+  font-size: 2rem;
+}
+
+#profile_picture {
+  width: 50px;
+}
+
+#profile_picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  /* border-right: solid 1px;
+  border-top: solid 1px; */
+  width: 18vw;
+  height: 86vh;
+  top: 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgba(248, 245, 245, 0.977); */
+  background: #bcbabadd;
+}
+
+.sidebar h2 {
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.sidebar_menu {
+  width: 100%;
+  height: 60%;
+  margin-top: 10px;
+  /* border-top: solid; */
+}
+
+.sidebar_menu li {
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 90;
+  padding: 20px;
+  margin-left: 5px;
+}
+
+.sidebar_menu li:hover {
+  background-color: #a9a2a2;
+}
+
+.logout {
+  margin-top: 100px;
+  width: 50%;
+  height: 30px;
+}
+
+#logout {
+  width: 100%;
+  height: 100%;
+  border: #000000 solid 1px;
+  border-radius: 7.5px;
+  font-size: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background: transparent;
+}
+
+#logout:hover {
+  background-color: rgb(76, 72, 72);
+  cursor: pointer;
+}
+
+.content {
+  width: 80.8vw;
+  height: auto;
+  /* border: black solid 0.2px; */
+  margin-left: 20vw;
+  margin-top: 100px;
+  /* position: relative; */
+  padding-bottom: 45px;
+  padding-top: 5px;
+}
